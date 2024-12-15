@@ -1,0 +1,67 @@
+/* В этом файле будут храниться все 
+значения переменных в исходном 
+состоянии, а так же их изменения в 
+зависимости от ширины устройства */
+
+:root {
+  --font-family: "Press Start 2P", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --color-logo: #000;
+  --header-background-color: #fff;
+  --frame-color: #000;
+  --watermark-shadow: #fff;
+  --floopy-color: #fff;
+  --button-text-color: #fff;
+  --contour-color: #000;
+  --heart-body-color: #ff0000;
+  --page-background-color: repeating-linear-gradient(
+      to left,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px,
+      #d3d3d3 4px,
+      #d3d3d3 6px
+    ),
+    repeating-linear-gradient(
+      to top,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px,
+      #d3d3d3 4px,
+      #d3d3d3 6px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-logo: #00cc14;
+    --header-background-color: #000;
+    --frame-color: #00cc14;
+    --watermark-shadow: #000;
+    --floopy-color: #00cc14;
+    --button-text-color: #00cc14;
+    --contour-color: #00cc14;
+    --heart-body-color: #ff0000;
+  }
+
+  .page {
+    --page-background-color: repeating-linear-gradient(
+        to left,
+        #000 2px,
+        transparent 2px,
+        transparent 4px,
+        #000 4px,
+        #000 6px
+      ),
+      repeating-linear-gradient(
+        to top,
+        #000 2px,
+        transparent 2px,
+        transparent 4px,
+        #000 4px,
+        #000 6px
+      ),
+      linear-gradient(to bottom, #007f0c, #004306);
+  }
+}
