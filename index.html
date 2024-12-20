@@ -7,6 +7,7 @@
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -19,7 +20,7 @@
     <header class="header">
       <div class="logo-group">
         <h1 class="logo__title">&lt;/HTML&gt;</h1>
-        <h2 class="logo__text">закрывающий тег</h2>
+        <p class="logo__text">закрывающий тег</p>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -49,11 +50,11 @@
     </header>
     <main class="main">
       <article class="card">
-        <div class="card__title">
-          <h2>Фритрек и нулевой спринт: Подготовка к работе</h2>
-        </div>
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
         <div class="card__image">
-          <img src="./images/image-one.jpg" alt="машинка" />
+          <img src="./images/image.jpg" alt="машинка" />
           <span class="watermark">&lt;/HTML&gt;</span>
         </div>
         <div class="card-blok">
@@ -71,8 +72,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -107,7 +113,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -116,11 +122,9 @@
       </article>
 
       <article class="card">
-        <div class="card__title">
-          <h2>1 спринт: Я — чистый лист</h2>
-        </div>
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image">
-          <img src="./images/image-two.jpg" alt="машинка" />
+          <img src="./images/image.jpg" class="brightness" alt="машинка" />
           <span class="watermark">&lt;/HTML&gt;</span>
         </div>
         <div class="card-blok">
@@ -141,8 +145,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -177,7 +186,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -186,11 +195,9 @@
       </article>
 
       <article class="card">
-        <div class="card__title">
-          <h2>1 спринт: А если не получится?</h2>
-        </div>
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image">
-          <img src="./images/image-three.jpg" alt="машинка" />
+          <img src="./images/image.jpg" class="contrast" alt="машинка" />
           <span class="watermark">&lt;CSS&gt;</span>
         </div>
         <div class="card-blok">
@@ -208,8 +215,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -244,7 +256,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -253,11 +265,9 @@
       </article>
 
       <article class="card">
-        <div class="card__title">
-          <h2>2 спринт: Погоня за идеалом</h2>
-        </div>
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__image">
-          <img src="./images/image-four.jpg" alt="машинка" />
+          <img src="./images/image.jpg" class="blur" alt="машинка" />
           <span class="watermark">&lt;desigions&gt;</span>
         </div>
         <div class="card-blok">
@@ -277,8 +287,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -313,7 +328,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -322,11 +337,9 @@
       </article>
 
       <article class="card">
-        <div class="card__title">
-          <h2>2 спринт: О тех, кто рядом</h2>
-        </div>
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__image">
-          <img src="./images/image-five.jpg" alt="машинка" />
+          <img src="./images/image.jpg" class="opacity" alt="машинка" />
           <span class="watermark">care</span>
         </div>
         <div class="card-blok">
@@ -347,8 +360,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -383,7 +401,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -392,11 +410,9 @@
       </article>
 
       <article class="card">
-        <div class="card__title">
-          <h2>3 спринт: Обходные стратегии</h2>
-        </div>
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__image">
-          <img src="./images/image-six.jpg" alt="машинка" />
+          <img src="./images/image.jpg" class="grayscale" alt="машинка" />
           <span class="watermark">&lt;support&gt;</span>
         </div>
         <div class="card-blok">
@@ -414,8 +430,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -450,7 +471,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -459,11 +480,9 @@
       </article>
 
       <article class="card">
-        <div class="card__title">
-          <h2>3 спринт: Когда опускаются руки</h2>
-        </div>
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__image">
-          <img src="./images/image-seven.jpg" alt="машинка" />
+          <img src="./images/image.jpg" class="saturate" alt="машинка" />
           <span class="watermark">&lt;lifes-style: none;&gt;</span>
         </div>
         <div class="card-blok">
@@ -483,8 +502,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -519,7 +543,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -528,11 +552,9 @@
       </article>
 
       <article class="card">
-        <div class="card__title">
-          <h2>«Сейчас я здесь»</h2>
-        </div>
+        <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image">
-          <img src="./images/image-eight.jpg" alt="машинка" />
+          <img src="./images/image.jpg" class="multi__filter" alt="машинка" />
           <span class="watermark">&lt;experience&gt;</span>
         </div>
         <div class="card-blok">
@@ -554,8 +576,13 @@
           </div>
           <div class="button-blok">
             <div class="button__like">
-              <button type="button" class="card__icon-button">
+              <button
+                type="button"
+                aria-label="сердечко"
+                class="card__icon-button"
+              >
                 <svg
+                  aria-hidden="true"
                   class="like-icon"
                   width="39"
                   height="36"
@@ -590,7 +617,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="card__like-button button__animation">
                 <span class="button__text"> Like </span>
               </button>
             </div>
@@ -600,7 +627,7 @@
 
       <div class="save_section">
         <button
-          class="save_section-button"
+          class="save_section-button button__animation"
           type="button"
           onclick="window.dialog.showModal()"
         >
@@ -617,14 +644,14 @@
                   <use href="./svg/floppy-big.svg#floop-big"></use>
                 </svg>
               </div>
-              <div class="dialog-button__text">
-                <p>Вставьте дискету, чтобы продолжить</p>
-              </div>
+              <p class="dialog-button__text">
+                Вставьте дискету, чтобы продолжить
+              </p>
             </div>
             <button
               type="button"
               onclick="window.dialog.close()"
-              class="dialog-button"
+              class="dialog-button button__animation"
             >
               <span class="button__text">ок</span>
             </button>

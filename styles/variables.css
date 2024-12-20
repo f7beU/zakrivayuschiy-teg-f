@@ -4,7 +4,7 @@
 зависимости от ширины устройства */
 
 :root {
-  --font-family: "Press Start 2P", sans-serif;
+  --font-family: "Press Start 2P", fantasy;
   --second-family: "Inter", sans-serif;
   --color-logo: #000;
   --header-background-color: #fff;
@@ -14,21 +14,20 @@
   --button-text-color: #fff;
   --contour-color: #000;
   --heart-body-color: #ff0000;
+  --page-background-color-reserve: #d3d3d3;
   --page-background-color: repeating-linear-gradient(
       to left,
+      #d3d3d3,
       #d3d3d3 2px,
       transparent 2px,
-      transparent 4px,
-      #d3d3d3 4px,
-      #d3d3d3 6px
+      transparent 4px
     ),
     repeating-linear-gradient(
       to top,
+      #d3d3d3,
       #d3d3d3 2px,
       transparent 2px,
-      transparent 4px,
-      #d3d3d3 4px,
-      #d3d3d3 6px
+      transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
@@ -43,24 +42,20 @@
     --button-text-color: #00cc14;
     --contour-color: #00cc14;
     --heart-body-color: #ff0000;
-  }
-
-  .page {
+    --page-background-color-reserve: #000;
     --page-background-color: repeating-linear-gradient(
         to left,
+        #000,
         #000 2px,
         transparent 2px,
-        transparent 4px,
-        #000 4px,
-        #000 6px
+        transparent 4px
       ),
       repeating-linear-gradient(
         to top,
+        #000,
         #000 2px,
         transparent 2px,
-        transparent 4px,
-        #000 4px,
-        #000 6px
+        transparent 4px
       ),
       linear-gradient(to bottom, #007f0c, #004306);
   }

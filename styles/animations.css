@@ -32,15 +32,12 @@
 @keyframes big__heart {
   0% {
     transform: scale(1);
-    transform-origin: center;
   }
   50% {
     transform: scale(1.5);
-    transform-origin: center;
   }
   100% {
     transform: scale(1);
-    transform-origin: center;
   }
 }
 
