@@ -9,6 +9,8 @@
   --color-logo: #000;
   --header-background-color: #fff;
   --frame-color: #000;
+  --card-title-weight: 700;
+  --text-weight: 400;
   --watermark-shadow: #fff;
   --floopy-color: #fff;
   --button-text-color: #fff;
@@ -30,33 +32,4 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-logo: #00cc14;
-    --header-background-color: #000;
-    --frame-color: #00cc14;
-    --watermark-shadow: #000;
-    --floopy-color: #00cc14;
-    --button-text-color: #00cc14;
-    --contour-color: #00cc14;
-    --heart-body-color: #ff0000;
-    --page-background-color-reserve: #000;
-    --page-background-color: repeating-linear-gradient(
-        to left,
-        #000,
-        #000 2px,
-        transparent 2px,
-        transparent 4px
-      ),
-      repeating-linear-gradient(
-        to top,
-        #000,
-        #000 2px,
-        transparent 2px,
-        transparent 4px
-      ),
-      linear-gradient(to bottom, #007f0c, #004306);
-  }
 }

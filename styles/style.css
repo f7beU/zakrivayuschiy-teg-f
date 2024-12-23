@@ -17,7 +17,6 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-
   display: flex;
   flex-direction: column;
   margin: 100px auto;
@@ -103,17 +102,16 @@
   font-size: 14px;
   text-transform: uppercase;
   color: var(--color-logo);
+  transition: opacity 0.3s ease;
 }
 
 button {
-  transition: opacity 0.3s ease;
   transition: box-shadow 0.3s ease;
 }
 
 button:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--color-logo);
-  transition: box-shadow 0.3s ease;
 }
 
 button:focus-visible {
@@ -167,7 +165,7 @@ button:hover {
   left: -20px;
   color: var(--color-logo);
   opacity: 0.6;
-  animation: indicator 0.3s alternate ease-in-out;
+  animation: indicator 0.3s infinite ease-in-out;
 }
 
 .main {
@@ -196,7 +194,7 @@ button:hover {
   margin: 5px auto;
   padding: 0 10px;
   font-family: var(--second-family);
-  font-weight: 700;
+  font-variation-settings: "wght" var(--card-title-weight);
   font-size: 18px;
   color: var(--color-logo);
 }
@@ -254,12 +252,17 @@ img {
   color: var(--color-logo);
   mix-blend-mode: hard-light;
   opacity: 0.5;
+  text-shadow: -1px -1px 0 var(--watermark-shadow),
+                1px -1px 0 var(--watermark-shadow),
+               -1px 1px 0 var(--watermark-shadow),
+                1px 1px 0 var(--watermark-shadow);
   -webkit-text-stroke: 1px var(--watermark-shadow);
 }
 
 @supports (-webkit-text-stroke: 1px var(--watermark-shadow)) {
   watermark {
     -webkit-text-stroke: 1px var(--watermark-shadow);
+    text-shadow: none;
   }
 }
 
@@ -282,7 +285,7 @@ img {
 
 .text {
   font-family: var(--second-family);
-  font-weight: 400;
+  font-variation-settings: "wght" var(--text-weight);
   font-size: 18px;
   line-height: 1.16667;
   color: var(--color-logo);
@@ -338,47 +341,47 @@ img {
 
 .like-icon:hover .main-body {
   fill: var(--contour-color);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.3s 0.03s ease;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon:hover .core {
   fill: var(--contour-color);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s 0.03s ease;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon:active .main-body {
   fill: var(--heart-body-color);
-  transition: fill 0.3s 0.05s ease;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon:active .core {
   fill: var(--heart-body-color);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-body-color);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-body-color);
-  transition: fill 0.3s 0.05s ease;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-body-color);
-  transition: fill 0.3s 0.06s ease;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .is-liked .heart {
@@ -441,7 +444,6 @@ img {
 
 .save_section {
   margin: 0 auto;
-  border: none;
   width: 306px;
   background-color: var(--header-background-color);
 }
@@ -451,13 +453,12 @@ img {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  outline: 2px solid var(--color-logo);
+  border: 2px solid var(--frame-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   background-color: inherit;
-  border: none;
   position: relative;
   overflow: hidden;
 }
@@ -534,10 +535,6 @@ dialog::backdrop {
   overflow: hidden;
   text-transform: uppercase;
   padding-top: 4px;
-}
-
-.dialog-button:focus {
-  box-shadow: 2px 2px 0 var(--color-logo);
 }
 
 @media (width >= 500px) {
