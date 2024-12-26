@@ -106,8 +106,9 @@
 }
 
 button {
-  transition: box-shadow 0.3s ease;
+  /* transition: box-shadow 0.3s ease; */
   transition: outline 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 button:focus {
@@ -122,7 +123,6 @@ button:focus-visible {
 
 button:hover {
   cursor: pointer;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover {

@@ -2,10 +2,11 @@
 Придерживайтесь такого именования классов:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+✦ не забудьте описать стили для изменения темы через
+   медизапрос пользовательских предпочтений
 */
 
-.theme-light {
+:root.theme-light {
   --color-logo: #000;
   --header-background-color: #fff;
   --frame-color: #000;
@@ -34,7 +35,7 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
-.theme-dark {
+:root.theme-dark {
   --color-logo: #00cc14;
   --header-background-color: #000;
   --frame-color: #00cc14;
@@ -63,33 +64,33 @@
     linear-gradient(to bottom, #007f0c, #004306);
 }
 
-@media (prefers-color-scheme: no-preferens) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --color-logo: #000;
-    --header-background-color: #fff;
-    --frame-color: #000;
-    --card-title-weight: 700;
-    --text-weight: 400;
-    --watermark-shadow: #fff;
-    --floopy-color: #fff;
-    --button-text-color: #fff;
-    --contour-color: #000;
+    --color-logo: #00cc14;
+    --header-background-color: #000;
+    --frame-color: #00cc14;
+    --card-title-weight: 785;
+    --text-weight: 465;
+    --watermark-shadow: #000;
+    --floopy-color: #00cc14;
+    --button-text-color: #00cc14;
+    --contour-color: #00cc14;
     --heart-body-color: #ff0000;
-    --page-background-color-reserve: #d3d3d3;
+    --page-background-color-reserve: #000;
     --page-background-color: repeating-linear-gradient(
         to left,
-        #d3d3d3,
-        #d3d3d3 2px,
+        #000,
+        #000 2px,
         transparent 2px,
         transparent 4px
       ),
       repeating-linear-gradient(
         to top,
-        #d3d3d3,
-        #d3d3d3 2px,
+        #000,
+        #000 2px,
         transparent 2px,
         transparent 4px
       ),
-      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+      linear-gradient(to bottom, #007f0c, #004306);
   }
 }
