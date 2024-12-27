@@ -106,8 +106,7 @@
 }
 
 button {
-  transition: outline 0.3s ease;
-  transition: opacity 0.3s ease;
+  transition: outline 0.3s ease, opacity 0.3s ease;
 }
 
 button:focus {
